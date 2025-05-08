@@ -9,7 +9,7 @@ interface ITodoListStore {
   removeTodo: (todo: TTodo) => void
 }
 
-export const useSidebarStore = create<ITodoListStore>((set) => ({
+export const useTodoListStore = create<ITodoListStore>((set) => ({
   mainList: new Map(todoListData.map(item => [item.name, item])),
   fruitList: new Map(),
   vegetableList: new Map(),
