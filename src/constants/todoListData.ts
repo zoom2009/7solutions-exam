@@ -1,9 +1,9 @@
 export type TTodo = {
-  type: string
+  type: 'Fruit' | 'Vegetable'
   name: string
 }
 
-export const DEFAULT_TODO_LIST: TTodo[] = [
+const todoListData: TTodo[] = [
   {
     type: 'Fruit',
     name: 'Apple',
@@ -49,3 +49,5 @@ export const DEFAULT_TODO_LIST: TTodo[] = [
     name: 'Carrot',
   },
 ]
+
+export default todoListData
