@@ -1,15 +1,14 @@
 import Link from 'next/link'
-import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
-const HomePage = () => {
-  const classNames = {
-    container: twMerge(`flex flex-col w-full min-h-screen justify-center items-center bg-[#f9f9f9]`),
-    title: twMerge(`text-3xl sm:text-4xl md:text-5xl text-background mb-12 font-bold text-center`),
-    buttonContainer: twMerge(`flex items-center gap-4 flex-col sm:flex-row`),
-    button: twMerge(`px-5 py-3 font-bold bg-blue-400 hover:bg-blue-500 duration-150 transition-all rounded-md`),
-  }
+const classNames = {
+  container: twMerge(`page-container justify-center items-center `),
+  title: twMerge(`text-3xl sm:text-4xl md:text-5xl text-background mb-12 font-bold text-center`),
+  buttonContainer: twMerge(`flex items-center gap-4 flex-col sm:flex-row`),
+  button: twMerge(`px-5 py-3 font-bold bg-blue-400 hover:bg-blue-500 duration-150 transition-all rounded-md text-white`),
+}
 
+const HomePage = () => {
   return (
     <div className={classNames.container}>
       <h1 className={classNames.title}>7Solutions Exam</h1>
