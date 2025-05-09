@@ -31,5 +31,10 @@ bun start
 - [x] transform data using normal for loop with store in object (that mean only run (n) time not run (n^2) time)
 - [x] transform data using get fn. from lodash/get (that save bundle)
 
+### 1st Load include html (good for SEO), You will see SEO score and content from api already render
+<img width="755" alt="image" src="https://github.com/user-attachments/assets/b7a9b808-d0c0-46bd-a8f7-db095365e36a" />
+<img width="947" alt="image" src="https://github.com/user-attachments/assets/10ebcac3-d9bb-40ba-b55e-c72b2492144f" />
+<img width="921" alt="image" src="https://github.com/user-attachments/assets/9918c84b-1871-485b-a5fc-3a66bd061a91" />
+
 ### Test Coverage Result
 <img width="1226" alt="image" src="https://github.com/user-attachments/assets/615d7001-5efd-46ba-8d10-848520cb7390" />
