@@ -69,7 +69,7 @@ type TUser = {
   role: string
 }
 
-type TUserResult = {
+export type TUserResult = {
   limit: number
   skip: number
   total: number
