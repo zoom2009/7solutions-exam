@@ -1,10 +1,20 @@
-import React from 'react'
+import { dehydrate, HydrationBoundary } from '@tanstack/react-query'
+import getQueryClient from '@/providers/_functions/getQueryClient'
+import { getUsers } from './queries'
+import DisplayUsers from './_components/DisplayUsers'
 
-const DataAPI = () => {
+const DataAPI = async () => {
+  const queryClient = getQueryClient()
+
+  await queryClient.prefetchQuery({
+    queryKey: ['users'],
+    queryFn: getUsers,
+  })
+
   return (
-    <div>
-      DataAPI...
-    </div>
+    <HydrationBoundary state={dehydrate(queryClient)}>
+      <DisplayUsers />
+    </HydrationBoundary>
   )
 }
 
