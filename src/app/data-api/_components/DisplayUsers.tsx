@@ -8,7 +8,7 @@ import transformUsers from "../_functions/transformUsers"
 // This is Example way to keep good seo for data fetching and ui activity with user (like onClick)
 
 const DisplayUsers = () => {
-  const { data } = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ['users'],
     queryFn: getUsers,
     select: (data) => {
@@ -17,8 +17,11 @@ const DisplayUsers = () => {
     },
   })
 
+  if (isLoading) return <div>Loading...</div>
+  if (isError) return <div>Error fetching data</div>
+
   return (
-    <pre>
+    <pre data-testid="data-api-display">
       {JSON.stringify(data, null, 2)}
     </pre>
   )
