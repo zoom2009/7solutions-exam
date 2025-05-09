@@ -25,4 +25,9 @@ bun start
 
 ## Note
 ### DATA-API test:
-- [x] inprogress...
+- [x] using react-query for prefetch, fetch, cache data
+- [x] this react-query hydration will make web page to ssr for good SEO (google will see full html content)
+- [x] good performance cache data for 1 mn. , suspend fetching data and fallback loading ui
+- [x] transform data using normal for loop with store in object (that mean only run (n) time not run (n^2) time)
+- [x] transform data using get fn. from lodash/get (that save bundle)
+- [x] TODO: will add test
