@@ -1,6 +1,6 @@
 Test by: <b>Sikarin Poonsawat</b>
 
-## fot testing website (Deploy on vercel)
+## for testing website (Deploy on vercel)
 [https://7solution-exam.vercel.app](https://7solution-exam.vercel.app)
 
 this repo using next 15 and bun
@@ -22,3 +22,7 @@ bun start
 ### TODO-LIST test:
 - [x] react-scan will active showing only render component (not whole page rerender when list was updated)
 - [x] this project using zustand and new Map instance for array for improve performance
+
+## Note
+### DATA-API test:
+- [x] inprogress...
