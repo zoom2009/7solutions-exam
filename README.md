@@ -30,4 +30,6 @@ bun start
 - [x] good performance cache data for 1 mn. , suspend fetching data and fallback loading ui
 - [x] transform data using normal for loop with store in object (that mean only run (n) time not run (n^2) time)
 - [x] transform data using get fn. from lodash/get (that save bundle)
-- [x] TODO: will add test
+
+### Test Coverage Result
+<img width="1226" alt="image" src="https://github.com/user-attachments/assets/615d7001-5efd-46ba-8d10-848520cb7390" />
