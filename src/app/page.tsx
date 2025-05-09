@@ -20,7 +20,7 @@ const HomePage = () => {
           Create data from API 
         </Link>
       </div>
-      <p className="text-center mt-8 text-sm text-gray-300">
+      <p className="text-center mt-8 text-sm text-gray-700">
         Test By: Sikarin Poonsawat (Fu)
       </p>
     </div>
