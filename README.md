@@ -21,14 +21,14 @@ bun start
 ## Note
 ### TODO-LIST test:
 - [x] react-scan will active showing only render component (not whole page rerender when list was updated)
-- [x] this project using zustand and new Map instance for array for improve performance
+- [x] this project using zustand and new Map instance for array for improve performance (when use filter will be run (1) time not (n) time)
 
 ## Note
 ### DATA-API test:
 - [x] using react-query for prefetch, fetch, cache data
 - [x] this react-query hydration will make web page to ssr for good SEO (google will see full html content)
 - [x] good performance cache data for 1 mn. , suspend fetching data and fallback loading ui
-- [x] transform data using normal for loop with store in object (that mean only run (n) time not run (n^2) time)
+- [x] transform data using normal for loop with store in object (that mean only run (1) time not run (n) time)
 - [x] transform data using get fn. from lodash/get (that save bundle)
 
 ### 1st Load include html (good for SEO), You will see SEO score and content from api already render
